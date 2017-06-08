@@ -32,4 +32,3 @@ fontawesome:
 	cd $(DEPENDDIR) && unzip font-awesome.zip && ln -s font-awesome-$(FA_VER) font-awesome
 
 .PHONY: setup_depend initdirs bootstrap 
-
