@@ -4,7 +4,7 @@
 Search - {{ SITENAME|striptags }}
 {% endblock title %}
 
-{% block content %}
+{% block content_body %}
 
 <script>
 $(document).ready(function() {
@@ -23,4 +23,10 @@ $(document).ready(function() {
 <div id="tipue_search_content"></div>
 
 </section>
-{% endblock content %}
+{% endblock content_body %}
+
+{% block scripts %}
+{% endblock %}
+{% if CUSTOM_SCRIPTS_SEARCH %}
+{% include "includes/" + CUSTOM_SCRIPTS_SEARCH %}
+{% endif %}
